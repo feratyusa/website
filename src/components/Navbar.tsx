@@ -11,7 +11,7 @@ function MenuListDesktop(){
         <div className="flex gap-5">            
             <Menu value="Portofolio" />
             <a href={`https://github.com/feratyusa`} target="__blank" className="p-3 tracking-wide hover:bg-slate-500 hover:text-white hover:underline">Github</a>                
-            <a href={`/documents/CV.pdf`} target="__blank" className="p-3 tracking-wide hover:bg-slate-500 hover:text-white hover:underline">Github</a>                
+            <a href={`/documents/CV.pdf`} target="__blank" className="p-3 tracking-wide hover:bg-slate-500 hover:text-white hover:underline">CV</a>                
         </div>
     )
 }
