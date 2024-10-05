@@ -84,7 +84,7 @@ function Timeline(){
                             <li>Dashboard monitoring jadwal setiap pelatihan berdasarka lokasinya</li>                                
                         </ul>
                         <div className="flex gap-3 mt-2">
-                            <LinkContent link="laci.prabupamungkas.site" name="demo" className="bg-red-500"/>
+                            <LinkContent link="http://laci.prabupamungkas.site" name="demo" className="bg-red-500"/>
                             <LinkContent link="https://github.com/feratyusa/laci-public" name="source code" className="bg-black"/>
                         </div>
                     </div>
