@@ -143,6 +143,38 @@ function Timeline(){
                     </div>
                 </>
             </LineContent>
+            <LineContent time="09/2022 - 10/2022">
+                <>
+                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
+                        <div className="flex items-center gap-2">                            
+                            <div>
+                                <p className="font-bold tracking-wide">3DVT</p>                                
+                            </div>
+                        </div>
+                        <div>
+                            <div className="rounded-lg bg-green-500 px-2 py-1 shadow-md">
+                                <p className="capitalize text-sm font-bold">DevOps</p>
+                            </div>
+                        </div>                                      
+                    </div>
+                    <div className="border-b-2 border-white px-5 py-2">
+                        <p>
+                            Internshi DevOps dalam pengembangan Sistem Penentu Volume Gumpalan Darah pada Deep Vein Thrombosis berbasis Citra Ultrasound Tiga Dimensi
+                        </p>                        
+                        <ul className="list-disc pl-4">
+                            <li className="list-item">Mengembangkan CI/CD backend dan frontend aplikasi dengan Github Actions dan Docker</li>
+                            <li>Mengkonfigurasi web server menggunakan Nginx pada Digital Ocean Platform</li>
+                        </ul>
+                        <div className="flex gap-3 mt-2">                            
+                            <LinkContent link="https://github.com/feratyusa/3dvt-backend" name="source code backend" className="bg-black"/>
+                            <LinkContent link="https://github.com/feratyusa/3dvt-frontend" name="source code frontend" className="bg-black"/>
+                        </div>
+                    </div>
+                    <div className="flex items-center pl-2 py-2">
+                        <img src={NodeJS.src} className="w-[35px]"/>                     
+                    </div>
+                </>
+            </LineContent>
             <LineContent time="05/2022 - 06/2022">
                 <>
                     <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
