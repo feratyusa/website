@@ -2,7 +2,6 @@
 
 import TitleContent from "./TitleContent"
 import { MovingCircleA } from "./BGAnimation"
-import { ReactElement } from "react"
 import { LACI, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React, RecruitAssistant } from "./LogoList"
 
 function Time({time}:{time:string}){
@@ -34,7 +33,9 @@ function LineContent({time, children}:{time:string, children:React.ReactNode}){
                 <Time time={time}/>
             </div>
             <div className="col-span-3">
-                <PortofolioContent children={children}/>
+                <PortofolioContent>
+                    {children}
+                </PortofolioContent>
             </div>
         </div>
     )
