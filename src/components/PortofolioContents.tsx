@@ -2,7 +2,7 @@
 
 import TitleContent from "./TitleContent"
 import { MovingCircleA } from "./BGAnimation"
-import { LACI, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React, RecruitAssistant } from "./LogoList"
+import { Docker, Github, LACI, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React, RecruitAssistant } from "./LogoList"
 
 function Time({time}:{time:string}){
     return(
@@ -171,7 +171,8 @@ function Timeline(){
                         </div>
                     </div>
                     <div className="flex items-center pl-2 py-2">
-                        <img src={NodeJS.src} className="w-[35px]"/>                     
+                        <LogoIcon logo={Docker.src}/>
+                        <LogoIcon logo={Github.src}/>
                     </div>
                 </>
             </LineContent>
