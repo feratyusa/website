@@ -19,7 +19,7 @@ function Time({time}:{time:string}){
     )
 }
 
-function PortofolioContent({children}:{children:ReactElement}){
+function PortofolioContent({children}:{children:React.ReactNode}){
     return(
         <div className="bg-slate-700 rounded-lg shadow-lg shadow-black/30 hover:shadow-white/30 w-full lg:max-w-4xl my-10">
             {children}
@@ -27,7 +27,7 @@ function PortofolioContent({children}:{children:ReactElement}){
     )
 }
 
-function LineContent({time, children}:{time:string, children:ReactElement}){
+function LineContent({time, children}:{time:string, children:React.ReactNode}){
     return(
         <div className="grid grid-cols-4 w-full h-full">
             <div className="col-span-1">
@@ -53,7 +53,7 @@ function Timeline(){
     return(
         <div className="w-full text-slate-200">
             <LineContent time="07/2024 - now">
-                <>
+                <div>
                     <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
                         <div className="flex items-center gap-2">
                             <div className="w-[50px]">
@@ -93,7 +93,7 @@ function Timeline(){
                         <LogoIcon logo={MySQL.src}/>
                         <LogoIcon logo={Nginx.src}/>
                     </div>
-                </>
+                </div>
             </LineContent>
             <LineContent time="10/2023 - 01/2024">
                 <>
