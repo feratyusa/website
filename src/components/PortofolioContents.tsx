@@ -1,10 +1,9 @@
 "use client"
 
-import MediaQuery from "react-responsive"
 import TitleContent from "./TitleContent"
 import { MovingCircleA } from "./BGAnimation"
 import { ReactElement } from "react"
-import { Flask, LACI, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React, RecruitAssistant } from "./LogoList"
+import { LACI, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React, RecruitAssistant } from "./LogoList"
 
 function Time({time}:{time:string}){
     return(

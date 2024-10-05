@@ -1,7 +1,5 @@
 "use client"
 
-import { Github, LogoIcon } from "./LogoList";
-
 export default function Footer(){
     return(
         <div className="flex justify-center gap-2 bg-slate-500 p-8">

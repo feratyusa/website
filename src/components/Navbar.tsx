@@ -1,6 +1,6 @@
 "use client"
 
-function Menu({value, file}:{value:string, file:boolean}){    
+function Menu({value}:{value:string}){    
     return(                
         <a href={`#${value}`} className="p-3 tracking-wide hover:bg-slate-500 hover:text-white hover:underline">{value}</a>                
     )
@@ -9,7 +9,7 @@ function Menu({value, file}:{value:string, file:boolean}){
 function MenuListDesktop(){
     return(
         <div className="flex gap-5">            
-            <Menu value="Portofolio" file={false}/>
+            <Menu value="Portofolio" />
             <a href={`https://github.com/feratyusa`} target="__blank" className="p-3 tracking-wide hover:bg-slate-500 hover:text-white hover:underline">Github</a>                
             <a href={`/documents/CV.pdf`} target="__blank" className="p-3 tracking-wide hover:bg-slate-500 hover:text-white hover:underline">Github</a>                
         </div>

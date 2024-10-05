@@ -1,7 +1,7 @@
 "use client"
 
 import { Dispatch, useState } from "react"
-import { MovingCircleA, MovingCircleB } from "./BGAnimation"
+import { MovingCircleB } from "./BGAnimation"
 import { Docker, Github, ITS, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React } from "./LogoList"
 
 function Website({swap, setSwap}:{swap:boolean, setSwap:Dispatch<boolean>}){
