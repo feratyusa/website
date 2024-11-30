@@ -28,7 +28,7 @@ function PortofolioContent({children}:{children:React.ReactNode}){
 
 function LineContent({time, children}:{time:string, children:React.ReactNode}){
     return(
-        <div className="grid grid-cols-4 w-full h-full">
+        <div className="grid grid-cols-4 w-full h-full text-sm">
             <div className="col-span-1">
                 <Time time={time}/>
             </div>
@@ -42,11 +42,14 @@ function LineContent({time, children}:{time:string, children:React.ReactNode}){
 }
 
 function LinkContent({link, className, name}:{name:string, link:string, className:string}){
-    return(        
-        <a href={link} target="__blank" className={`rounded-lg hover:bg-white hover:text-black p-2 
-                                capitalize tracking-wide text-sm ${className}`}>
-            {name}
-        </a>        
+    return(      
+        <div className="flex items-center">
+            <div className={`${className} text-center rounded-lg hover:bg-white hover:text-black p-2`}>
+                <a href={link} target="__blank" className={`capitalize tracking-wide text-sm`}>
+                    {name}
+                </a>        
+            </div>  
+        </div>
     )
 }
 
@@ -84,7 +87,7 @@ function Timeline(){
                             <li>Dashboard monitoring jadwal setiap pelatihan berdasarka lokasinya</li>                                
                         </ul>
                         <div className="flex gap-3 mt-2">
-                            <LinkContent link="http://laci.prabupamungkas.site" name="demo" className="bg-red-500"/>
+                            <LinkContent link="/documents/LACI.pdf" name="dokumen" className="bg-amber-500"/>
                             <LinkContent link="https://github.com/feratyusa/laci-public" name="source code" className="bg-black"/>
                         </div>
                     </div>
@@ -100,9 +103,6 @@ function Timeline(){
                 <>
                     <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
                         <div className="flex items-center gap-2">
-                            <div className="w-[85px]">
-                                <img src={RecruitAssistant.src} alt="LACi Logo" />
-                            </div>
                             <div>
                                 <p className="font-bold tracking-wide">Recruiter Assitant</p>
                                 <p className="font-thin text-sm tracking-wide">

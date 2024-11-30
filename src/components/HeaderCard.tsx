@@ -12,7 +12,8 @@ function Website({swap, setSwap}:{swap:boolean, setSwap:Dispatch<boolean>}){
                 ${swap == true ? 'opacity-15 -translate-y-1/2' : ''}`}                           
             onClick={() => setSwap(!swap)}
         >
-            <p className="lowercase text-center text-8xl tracking-[40px] italic">Website</p>
+            <p className="lowercase text-center text-5xl tracking-[20px] italic">Website</p>
+            <p className="mt-5 lowercase text-center text-xs tracking-widest italic">[Click me]</p>
         </div>
     )
 }
@@ -43,10 +44,12 @@ function RecapSection({swap, setSwap}:{swap:boolean, setSwap: Dispatch<boolean>}
                             ${swap == false ? 'opacity-15 -translate-y-1/4' : ''}`}                             
                 onClick={() => setSwap(!swap)}
             >
-                <p className="capitalize text-center text-4xl tracking-[18px] font-bold mb-5">
+                <p className="capitalize text-center text-4xl tracking-[10px] font-bold mb-5">
                     Ega Prabu Pamungkas
                 </p>
-                <Logo hidden={swap == false}/>
+                <p className="text-center text-lg italic tracking-widest ">
+                    Full Stack Developer
+                </p>
             </div>                      
     )
 }

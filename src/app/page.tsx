@@ -5,7 +5,7 @@ import PortofolioContents from "@/components/PortofolioContents";
 
 export default function Home() {  
   return (
-    <main className="bg-slate-800 text-white">
+    <main className="bg-slate-800 text-white overflow-hidden">
       <Navbar />
       <HeaderCard />
       <PortofolioContents id="Portofolio"/>
