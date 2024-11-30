@@ -2,7 +2,7 @@
 
 import TitleContent from "./TitleContent"
 import { MovingCircleA } from "./BGAnimation"
-import { Docker, Github, LACI, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React, RecruitAssistant } from "./LogoList"
+import { Docker, Github, LACI, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React } from "./LogoList"
 
 function Time({time}:{time:string}){
     return(

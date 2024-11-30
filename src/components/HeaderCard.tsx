@@ -18,24 +18,6 @@ function Website({swap, setSwap}:{swap:boolean, setSwap:Dispatch<boolean>}){
     )
 }
 
-function Logo({hidden}:{hidden:boolean}){
-    return(
-        <div className={`flex justify-center items-center gap-3 transition-all duration-300 ease-in-out ${hidden ? 'opacity-0 -translate-y-10' : ''}`}>
-            <LogoIcon logo={ITS.src}/>
-            <div className="h-[50px] border-l-2 border-white"></div>
-            <img src={Laravel.src} alt="Laravel" className="h-[50px]"/>
-            <LogoIcon logo={React.src}/>
-            <img src={NodeJS.src} className="w-[35px]"/>  
-            <LogoFlask />
-            <LogoIcon logo={Nginx.src}/>
-            <LogoIcon logo={MySQL.src}/>
-            <LogoIcon logo={PostgreSQL.src}/>
-            <LogoIcon logo={Docker.src}/>
-            <LogoIcon logo={Github.src}/>
-        </div>
-    )
-}
-
 function RecapSection({swap, setSwap}:{swap:boolean, setSwap: Dispatch<boolean>}){
     
     return(        
