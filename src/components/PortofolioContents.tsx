@@ -43,13 +43,13 @@ function LineContent({time, children}:{time:string, children:React.ReactNode}){
 
 function LinkContent({link, className, name}:{name:string, link:string, className:string}){
     return(      
-        <div className="flex items-center">
+        <a href={link} target="__blank" className="flex items-center">
             <div className={`${className} text-center rounded-lg hover:bg-white hover:text-black p-2`}>
-                <a href={link} target="__blank" className={`capitalize tracking-wide text-sm`}>
+                <p className={`capitalize tracking-wide text-sm`}>
                     {name}
-                </a>        
+                </p>        
             </div>  
-        </div>
+        </a>
     )
 }
 
@@ -86,7 +86,7 @@ function Timeline(){
                             <li>Dashboard monitoring setiap anggaran pelatihan yang telah dimasukkan</li>
                             <li>Dashboard monitoring jadwal setiap pelatihan berdasarka lokasinya</li>                                
                         </ul>
-                        <div className="flex gap-3 mt-2">
+                        <div className="mt-5 mb-2 grid grid-cols-1 md:flex gap-2">
                             <LinkContent link="/documents/LACI.pdf" name="dokumen" className="bg-amber-500"/>
                             <LinkContent link="https://github.com/feratyusa/laci-public" name="source code" className="bg-black"/>
                         </div>
@@ -129,7 +129,7 @@ function Timeline(){
                             <li>Metode SAW berdasarkan nilai bobot yang diberikan pada setiap kriteria maupun subkriteria</li>
                             <li>Metode AHP berdasarkan asas kepentingan antar satu kriteria dengan kriteria lainnya</li>                                               
                         </ul>
-                        <div className="flex gap-3 mt-2">
+                        <div className="mt-5 mb-2 grid grid-cols-1 md:flex gap-2">
                             <LinkContent link="/documents/RA.pdf" name="dokumen" className="bg-amber-500"/>
                             <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-react" name="source code frontend" className="bg-black"/>
                             <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-flask" name="source code backend" className="bg-black"/>
@@ -165,7 +165,7 @@ function Timeline(){
                             <li className="list-item">Mengembangkan CI/CD backend dan frontend aplikasi dengan Github Actions dan Docker</li>
                             <li>Mengkonfigurasi web server menggunakan Nginx pada Digital Ocean Platform</li>
                         </ul>
-                        <div className="flex gap-3 mt-2">                            
+                        <div className="mt-5 mb-2 grid grid-cols-1 md:flex gap-2">                            
                             <LinkContent link="https://github.com/feratyusa/3dvt-backend" name="source code backend" className="bg-black"/>
                             <LinkContent link="https://github.com/feratyusa/3dvt-frontend" name="source code frontend" className="bg-black"/>
                         </div>
@@ -202,7 +202,7 @@ function Timeline(){
                             <li className="list-item">Mengintegrasikan model pendeteksi masalah kulit dengan aplikasi Paras menggunakan RESTful API</li>
                             <li>Deployment Backend dan model aplikasi menggunakan App Engine dari Google Cloud Platform</li>
                         </ul>
-                        <div className="flex gap-3 mt-2">
+                        <div className="mt-5 mb-2 grid grid-cols-1 md:flex gap-2">
                             <LinkContent link="documents/Paras.pdf" name="dokumen" className="bg-amber-500"/>
                             <LinkContent link="https://github.com/feratyusa/paras-capstone-bangkit-2022" name="source code" className="bg-black"/>
                         </div>
