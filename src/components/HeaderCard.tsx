@@ -2,7 +2,6 @@
 
 import { Dispatch, useState } from "react"
 import { MovingCircleB } from "./BGAnimation"
-import { Docker, Github, ITS, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React } from "./LogoList"
 
 function Website({swap, setSwap}:{swap:boolean, setSwap:Dispatch<boolean>}){
     return(
