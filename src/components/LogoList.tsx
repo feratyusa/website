@@ -12,26 +12,14 @@ import Github from "@/public/github.svg"
 import LACI from "@/public/laci.png"
 import RecruitAssistant from "@/public/recruitassistant.svg"
 import NodeJS from "@/public/nodejs.svg"
+import EHumanCapital from "@/public/ehumancapital.png"
+import Springboot from "@/public/springboot.png"
+import Flutter from "@/public/flutterlogo.png"
 
-function LogoIcon({logo}:{logo:string}){
-    return(
-        <img src={logo} className="w-[60px]"/>
-    )
-}
-
-function LogoFlask(){
-    return(
-        <div className={`bg-white rounded-lg`}>
-            <img src={Flask.src} alt="Flask" className="w-[60px]" />
-        </div>
-    )
-}
 
 export {
-    LogoIcon,
     ITS,
     React,
-    LogoFlask,
     Laravel,
     Nginx,
     MySQL,
@@ -41,5 +29,8 @@ export {
     LACI,
     RecruitAssistant,
     Flask,
-    NodeJS
+    NodeJS,
+    EHumanCapital,
+    Springboot,
+    Flutter,
 }

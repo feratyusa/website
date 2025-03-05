@@ -2,17 +2,25 @@
 
 import TitleContent from "./TitleContent"
 import { MovingCircleA } from "./BGAnimation"
-import { Docker, Github, LACI, Laravel, LogoFlask, LogoIcon, MySQL, Nginx, NodeJS, PostgreSQL, React } from "./LogoList"
+import { Docker, EHumanCapital, Flask, Flutter, Github, LACI, Laravel, MySQL, Nginx, NodeJS, PostgreSQL, React, Springboot } from "./LogoList"
 
 function Time({time}:{time:string}){
     return(
         <div className="grid grid-rows-3 h-full">
-            <div className="m-auto h-full bg-slate-500 w-1">
+            <div className="flex items-center justify-center">
+                <div className="bg-slate-500 w-1 h-full">
+                </div>
             </div>
-            <div className="m-auto">
-                <p className="italic">{time}</p>
+            <div className="flex justify-center items-center">
+                <div className="px-1">
+                    <p className="italic text-center">
+                        {time}
+                    </p>
+                </div>
             </div>
-            <div className="m-auto h-full bg-slate-500 w-1">
+            <div className="flex items-center justify-center">
+                <div className="bg-slate-500 w-1 h-full">
+                </div>
             </div>
         </div>
     )
@@ -42,21 +50,60 @@ function LineContent({time, children}:{time:string, children:React.ReactNode}){
 }
 
 function LinkContent({link, className, name}:{name:string, link:string, className:string}){
-    return(      
-        <a href={link} target="__blank" className="flex items-center">
-            <div className={`${className} text-center rounded-lg hover:bg-white hover:text-black p-2`}>
-                <p className={`capitalize tracking-wide text-sm`}>
-                    {name}
-                </p>        
-            </div>  
-        </a>
+    return(
+        <div className="flex items-center justify-center">
+            <a href={link} target="__blank" className="flex items-center">
+                <div className={`${className} text-center rounded-lg hover:bg-white hover:text-black p-2`}>
+                    <p className={`capitalize tracking-wide text-sm`}>
+                        {name}
+                    </p>        
+                </div>  
+            </a>
+        </div>      
     )
 }
 
 function Timeline(){
     return(
         <div className="w-full text-slate-200">
-            <LineContent time="07/2024 - now">
+            <LineContent time="12/2024 - Now">
+                <div>
+                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
+                        <div className="flex items-center gap-2">
+                            <div className="w-[50px]">
+                                <img src={EHumanCapital.src} alt="LACi Logo" />
+                            </div>
+                            <div>
+                                <p className="font-bold">E-Human Capital Reload</p>
+                                <p className="font-thin text-sm tracking-wide">Employee Mobile Application</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="rounded-lg bg-red-500 px-2 py-1 shadow-md">
+                                <p className="capitalize text-sm font-bold text-center">Full Stack</p>
+                            </div>
+                        </div>                                                              
+                    </div>
+                    <div className="border-b-2 border-white px-5 py-2">                        
+                        <ul className="list-disc pl-4">
+                            <li className="list-item">Accomodate more than 7 main functionalities for employee to use, which includes paid leave, sick permit leave, regular permit leave, glasses accomodation, hospital stay, hospital care, and others </li>
+                            <li>Develop authentication using JWT Token and integrate with the last system and credential used</li>
+                            <li>Develop CI/CD using Docker and utilising Gitlab features for improving the team development flow</li>
+                        </ul>
+                        <div className="mt-5 mb-2 flex gap-2">
+                            <LinkContent link="/documents/LACI.pdf" name="dokumen" className="bg-blue-500"/>
+                            <LinkContent link="https://github.com/feratyusa/laci-public" name="source code" className="bg-black"/>
+                        </div>
+                    </div>
+                    <div className="px-5 py-2 flex items-center gap-5">
+                        <img src={Springboot.src} alt="Springboot" width={30}/>
+                        <div className="bg-white rounded-lg p-2">
+                            <img src={Flutter.src} alt="Flutter" width={60} />
+                        </div>
+                    </div>
+                </div>
+            </LineContent>
+            <LineContent time="07/2024 - 12/2024">
                 <div>
                     <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
                         <div className="flex items-center gap-2">
@@ -65,37 +112,34 @@ function Timeline(){
                             </div>
                             <div>
                                 <p className="font-bold tracking-[8px]">LACI</p>
-                                <p className="font-thin text-sm tracking-wide">Sistem Administrasi Learning Center</p>
+                                <p className="font-thin text-sm tracking-wide">Administration System of Learning Center</p>
                             </div>
                         </div>
                         <div>
                             <div className="rounded-lg bg-red-500 px-2 py-1 shadow-md">
-                                <p className="capitalize text-sm font-bold">Full Stack</p>
+                                <p className="capitalize text-sm font-bold text-center">Full Stack</p>
                             </div>
                         </div>                                                              
                     </div>
-                    <div className="border-b-2 border-white px-5 py-2">
-                        <p>
-                            Aplikasi berbasis web untuk membantu pegawai dalam memonitoring progress 
-                            nota, surat, invoice, dan dokumen administrasi lainnya untuk pelaksanaan pelatihan/diklat
-                            dan juga monitoring pengeluaran anggaran pelatihan/diklat dalam setiap tahunnya.
-                        </p>                        
+                    <div className="border-b-2 border-white px-5 py-2">                        
                         <ul className="list-disc pl-4">
-                            <li className="list-item">Sistem file manager untuk setiap jenis pelatihan</li>
-                            <li>Sistem file tag untuk monitoring nota, surat, invoice atau dokumen pelatihan yang wajib dipenuhi</li>
-                            <li>Dashboard monitoring setiap anggaran pelatihan yang telah dimasukkan</li>
-                            <li>Dashboard monitoring jadwal setiap pelatihan berdasarka lokasinya</li>                                
+                            <li className="list-item">Monitoring system for over 200 training events per year</li>
+                            <li>Participants and file manager for each training events, also equipped with monitoring system for administrator</li>
+                            <li>Budget monitoring system with dynamic type of budgets and budget details</li>
+                            <li>Dashboard training with query based filtering</li>
+                            <li>Certification monitoring system for over 2000 employees</li>
+                            <li>Guidebook for the website usage</li>
                         </ul>
-                        <div className="mt-5 mb-2 grid grid-cols-1 md:flex gap-2">
-                            <LinkContent link="/documents/LACI.pdf" name="dokumen" className="bg-amber-500"/>
+                        <div className="mt-5 mb-2 flex gap-2">
+                            <LinkContent link="/documents/LACI.pdf" name="dokumen" className="bg-blue-500"/>
                             <LinkContent link="https://github.com/feratyusa/laci-public" name="source code" className="bg-black"/>
                         </div>
                     </div>
-                    <div className="flex items-center py-2">
-                        <LogoIcon logo={Laravel.src}/>
-                        <LogoIcon logo={React.src}/>
-                        <LogoIcon logo={MySQL.src}/>
-                        <LogoIcon logo={Nginx.src}/>
+                    <div className="flex items-center py-2 overflow-scroll">
+                        <img src={Laravel.src} alt="Laravel" width={60} />
+                        <img src={React.src} alt="Laravel" width={60} />
+                        <img src={MySQL.src} alt="Laravel" width={60} />
+                        <img src={Nginx.src} alt="Laravel" width={60} />
                     </div>
                 </div>
             </LineContent>
@@ -104,13 +148,11 @@ function Timeline(){
                     <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
                         <div className="flex items-center gap-2">
                             <div>
-                                <p className="font-bold tracking-wide">Recruiter Assitant</p>
+                                <p className="font-bold tracking-wide">Recruiter Assistant</p>
                                 <p className="font-thin text-sm tracking-wide">
-                                    Sistem Rekomendasi Rekrutmen pada RuangKarir Double Track Menggunakan Metode 
-                                    <span className="italic">Simple Additive Weight (SAW)</span>
-                                    <span>dan Analytical Hierarchy Process (AHP)</span>
+                                    Decision Support System for Recruitmen
                                 </p>
-                                <p className="font-thin text-sm tracking-wide">Tugas Akhir Teknik Informatika ITS 2024</p>
+                                <p className="font-thin text-sm tracking-wide">Thesis Project for Infomatics Engineering ITS 2024</p>
                             </div>
                         </div>
                         <div>
@@ -121,25 +163,29 @@ function Timeline(){
                     </div>
                     <div className="border-b-2 border-white px-5 py-2">
                         <p>
-                            Sistem pendukung keputusan (SPK) untuk membantu rekruter dalam menyaring calon karyawan dimana sistem dapat membantu
-                            menentukan calon karyawan yang paling cocok berdasarkan bobot kriteria maupun subkriteria yang diberikan oleh rekruter.
+                            Decision Support System for Recruitment on RuangKarir Double Track Using 
+                            <i>Simple Additive Weight (SAW)</i>
+                            <i>and Analytical Hierarchy Process (AHP)</i> methods.
+                            This decsision support system (DSS) is used to help recruiter with filtering for employee candidate where the system
+                            can help determine the best candidate based on criteria or sub-criteria weight specified by the recruiter.
                         </p>                        
                         <ul className="list-disc pl-4">
-                            <li className="list-item">Sistem rekomendasi calon karyawan dengan menggunakan metode SAW dan AHP berdasarkan bobot kriteria yang diberikan</li>                            
-                            <li>Metode SAW berdasarkan nilai bobot yang diberikan pada setiap kriteria maupun subkriteria</li>
-                            <li>Metode AHP berdasarkan asas kepentingan antar satu kriteria dengan kriteria lainnya</li>                                               
+                            <li className="list-item">SAW method is based on the weight each criteria or subcriteria that is specified by the recruiter</li>
+                            <li>AHP method is based on importance or priority of each criteria and subcriteria with other criteria or subcriteria</li>                                               
                         </ul>
-                        <div className="mt-5 mb-2 grid grid-cols-1 md:flex gap-2">
-                            <LinkContent link="/documents/RA.pdf" name="dokumen" className="bg-amber-500"/>
-                            <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-react" name="source code frontend" className="bg-black"/>
-                            <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-flask" name="source code backend" className="bg-black"/>
+                        <div className="mt-5 mb-2 flex gap-2">
+                            <LinkContent link="/documents/RA.pdf" name="dokumen" className="bg-blue-500"/>
+                            <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-react" name="Frontend" className="bg-black"/>
+                            <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-flask" name="Backend" className="bg-black"/>
                         </div>
                     </div>
-                    <div className="flex w-fit h-fit py-2">
-                        <LogoIcon logo={React.src}/>
-                        <LogoFlask />
-                        <LogoIcon logo={PostgreSQL.src}/>
-                        <LogoIcon logo={Nginx.src}/>
+                    <div className="flex py-2 overflow-scroll">
+                        <img src={React.src} alt="Laravel" width={60} />
+                        <div className="bg-white rounded-lg">
+                            <img src={Flask.src} alt="Flask" width={60} />
+                        </div>
+                        <img src={PostgreSQL.src} alt="Laravel" width={60} />
+                        <img src={Nginx.src} alt="Laravel" width={60} />
                     </div>
                 </>
             </LineContent>
@@ -159,20 +205,24 @@ function Timeline(){
                     </div>
                     <div className="border-b-2 border-white px-5 py-2">
                         <p>
-                            Internshi DevOps dalam pengembangan Sistem Penentu Volume Gumpalan Darah pada Deep Vein Thrombosis berbasis Citra Ultrasound Tiga Dimensi
+                            DevOps internship on developing the "System for Determining Blood Clot Volume in Deep Vein Thrombosis based on Three-Dimensional Ultrasound Images"
                         </p>                        
                         <ul className="list-disc pl-4">
-                            <li className="list-item">Mengembangkan CI/CD backend dan frontend aplikasi dengan Github Actions dan Docker</li>
-                            <li>Mengkonfigurasi web server menggunakan Nginx pada Digital Ocean Platform</li>
+                            <li className="list-item">Developing CI/CD for the backend and frontend utilising Github Actions and Docker</li>
+                            <li>Configurate web server using Nginx on Digital Ocean Platform</li>
                         </ul>
-                        <div className="mt-5 mb-2 grid grid-cols-1 md:flex gap-2">                            
-                            <LinkContent link="https://github.com/feratyusa/3dvt-backend" name="source code backend" className="bg-black"/>
-                            <LinkContent link="https://github.com/feratyusa/3dvt-frontend" name="source code frontend" className="bg-black"/>
+                        <div className="mt-5 mb-2 flex gap-2 overflow-scroll">
+                            <LinkContent link="https://github.com/feratyusa/3dvt-backend" name="backend" className="bg-black"/>
+                            <LinkContent link="https://github.com/feratyusa/3dvt-frontend" name="frontend" className="bg-black"/>
                         </div>
                     </div>
-                    <div className="flex items-center pl-2 py-2">
-                        <LogoIcon logo={Docker.src}/>
-                        <LogoIcon logo={Github.src}/>
+                    <div className="flex gap-2 p-2 overflow-scroll">
+                        <div className="bg-white rounded-lg">
+                            <img src={Docker.src} alt="Docker" width={60} />
+                        </div>
+                        <div className="bg-white rounded-lg">
+                            <img src={Github.src} alt="Docker" width={60} />
+                        </div>
                     </div>
                 </>
             </LineContent>
@@ -189,26 +239,26 @@ function Timeline(){
                             </div>
                         </div>
                         <div>
-                            <div className="rounded-lg bg-amber-500 px-2 py-1 shadow-md">
+                            <div className="rounded-lg bg-rose-500 px-2 py-1 shadow-md">
                                 <p className="capitalize text-sm font-bold">Backend</p>
                             </div>
                         </div>                                      
                     </div>
                     <div className="border-b-2 border-white px-5 py-2">
                         <p>
-                            Aplikasi scan wajah untuk membantu menganalisa masalah awal wajah pengguna dan memberikan rekomendasi obat kecantikan yang terkait untuk membantu mengatasi masalah wajah tersebut.
-                        </p>                        
+                            Face Scanner Application to help analyze early stage facial problem and provide recommendations for related beauty medicines to help overcome these facial problems.
+                        </p>
                         <ul className="list-disc pl-4">
-                            <li className="list-item">Mengintegrasikan model pendeteksi masalah kulit dengan aplikasi Paras menggunakan RESTful API</li>
-                            <li>Deployment Backend dan model aplikasi menggunakan App Engine dari Google Cloud Platform</li>
+                            <li className="list-item">Integrate the model used to identify facial problem with the mobile Application using RESTful API (HapiJS)</li>
+                            <li>Deploy the backend RESTful API and the model using App Engine from Google Cloud Platform</li>
                         </ul>
-                        <div className="mt-5 mb-2 grid grid-cols-1 md:flex gap-2">
-                            <LinkContent link="documents/Paras.pdf" name="dokumen" className="bg-amber-500"/>
+                        <div className="mt-5 mb-2 flex gap-2 overflow-scroll">
+                            <LinkContent link="documents/Paras.pdf" name="dokumen" className="bg-blue-500"/>
                             <LinkContent link="https://github.com/feratyusa/paras-capstone-bangkit-2022" name="source code" className="bg-black"/>
                         </div>
                     </div>
-                    <div className="flex items-center pl-2 py-2">
-                        <img src={NodeJS.src} className="w-[35px]"/>                     
+                    <div className="flex gap-2 p-2">
+                        <img src={NodeJS.src} width={35}/>
                     </div>
                 </>
             </LineContent>
