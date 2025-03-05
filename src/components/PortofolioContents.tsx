@@ -52,7 +52,7 @@ function LineContent({time, children}:{time:string, children:React.ReactNode}){
 function LinkContent({link, className, name}:{name:string, link:string, className:string}){
     return(
         <div className="flex items-center justify-center">
-            <a href={link} target="__blank" className="flex items-center">
+            <a href={link} target="_blank" className="flex items-center">
                 <div className={`${className} text-center rounded-lg hover:bg-white hover:text-black p-2`}>
                     <p className={`capitalize tracking-wide text-sm`}>
                         {name}
@@ -91,8 +91,7 @@ function Timeline(){
                             <li>Develop CI/CD using Docker and utilising Gitlab features for improving the team development flow</li>
                         </ul>
                         <div className="mt-5 mb-2 flex gap-2">
-                            <LinkContent link="/documents/LACI.pdf" name="dokumen" className="bg-blue-500"/>
-                            <LinkContent link="https://github.com/feratyusa/laci-public" name="source code" className="bg-black"/>
+                            <LinkContent link="/documents/EHCReload.pdf" name="dokumen" className="bg-blue-500"/>
                         </div>
                     </div>
                     <div className="px-5 py-2 flex items-center gap-5">
@@ -205,7 +204,7 @@ function Timeline(){
                     </div>
                     <div className="border-b-2 border-white px-5 py-2">
                         <p>
-                            DevOps internship on developing the "System for Determining Blood Clot Volume in Deep Vein Thrombosis based on Three-Dimensional Ultrasound Images"
+                            DevOps internship on developing the &quot;System for Determining Blood Clot Volume in Deep Vein Thrombosis based on Three-Dimensional Ultrasound Images&quot;
                         </p>                        
                         <ul className="list-disc pl-4">
                             <li className="list-item">Developing CI/CD for the backend and frontend utilising Github Actions and Docker</li>
