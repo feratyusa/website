@@ -134,7 +134,7 @@ function Timeline(){
                             <LinkContent link="https://github.com/feratyusa/laci-public" name="source code" className="bg-black"/>
                         </div>
                     </div>
-                    <div className="flex items-center py-2 overflow-scroll">
+                    <div className="flex items-center py-2 overflow-x-auto">
                         <img src={Laravel.src} alt="Laravel" width={60} />
                         <img src={React.src} alt="Laravel" width={60} />
                         <img src={MySQL.src} alt="Laravel" width={60} />
@@ -178,7 +178,7 @@ function Timeline(){
                             <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-flask" name="Backend" className="bg-black"/>
                         </div>
                     </div>
-                    <div className="flex py-2 overflow-scroll">
+                    <div className="flex py-2 overflow-x-auto">
                         <img src={React.src} alt="Laravel" width={60} />
                         <div className="bg-white rounded-lg">
                             <img src={Flask.src} alt="Flask" width={60} />
@@ -210,12 +210,12 @@ function Timeline(){
                             <li className="list-item">Developing CI/CD for the backend and frontend utilising Github Actions and Docker</li>
                             <li>Configurate web server using Nginx on Digital Ocean Platform</li>
                         </ul>
-                        <div className="mt-5 mb-2 flex gap-2 overflow-scroll">
+                        <div className="mt-5 mb-2 flex gap-2 overflow-x-auto">
                             <LinkContent link="https://github.com/feratyusa/3dvt-backend" name="backend" className="bg-black"/>
                             <LinkContent link="https://github.com/feratyusa/3dvt-frontend" name="frontend" className="bg-black"/>
                         </div>
                     </div>
-                    <div className="flex gap-2 p-2 overflow-scroll">
+                    <div className="flex gap-2 p-2 overflow-x-auto">
                         <div className="bg-white rounded-lg">
                             <img src={Docker.src} alt="Docker" width={60} />
                         </div>
@@ -251,7 +251,7 @@ function Timeline(){
                             <li className="list-item">Integrate the model used to identify facial problem with the mobile Application using RESTful API (HapiJS)</li>
                             <li>Deploy the backend RESTful API and the model using App Engine from Google Cloud Platform</li>
                         </ul>
-                        <div className="mt-5 mb-2 flex gap-2 overflow-scroll">
+                        <div className="mt-5 mb-2 flex gap-2 overflow-x-auto">
                             <LinkContent link="documents/Paras.pdf" name="dokumen" className="bg-blue-500"/>
                             <LinkContent link="https://github.com/feratyusa/paras-capstone-bangkit-2022" name="source code" className="bg-black"/>
                         </div>
