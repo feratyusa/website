@@ -68,7 +68,7 @@ function Timeline(){
         <div className="w-full text-slate-200">
             <LineContent time="12/2024 - Now">
                 <div>
-                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
+                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2 gap-2 overflow-x-auto">
                         <div className="flex items-center gap-2">
                             <div className="w-[50px]">
                                 <img src={EHumanCapital.src} alt="LACi Logo" />
@@ -104,7 +104,7 @@ function Timeline(){
             </LineContent>
             <LineContent time="07/2024 - 12/2024">
                 <div>
-                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
+                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2 gap-2 overflow-x-auto">
                         <div className="flex items-center gap-2">
                             <div className="w-[50px]">
                                 <img src={LACI.src} alt="LACi Logo" />
@@ -122,14 +122,14 @@ function Timeline(){
                     </div>
                     <div className="border-b-2 border-white px-5 py-2">                        
                         <ul className="list-disc pl-4">
-                            <li className="list-item">Monitoring system for over 200 training events per year</li>
+                            <li className="list-item">Monitoring system for over 100 training events per year</li>
                             <li>Participants and file manager for each training events, also equipped with monitoring system for administrator</li>
                             <li>Budget monitoring system with dynamic type of budgets and budget details</li>
                             <li>Dashboard training with query based filtering</li>
                             <li>Certification monitoring system for over 2000 employees</li>
                             <li>Guidebook for the website usage</li>
                         </ul>
-                        <div className="mt-5 mb-2 flex gap-2">
+                        <div className="mt-5 mb-2 flex gap-2 overflow-x-auto">
                             <LinkContent link="/documents/LACI.pdf" name="dokumen" className="bg-blue-500"/>
                             <LinkContent link="https://github.com/feratyusa/laci-public" name="source code" className="bg-black"/>
                         </div>
@@ -144,7 +144,7 @@ function Timeline(){
             </LineContent>
             <LineContent time="10/2023 - 01/2024">
                 <>
-                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
+                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2 gap-2 overflow-x-auto"> 
                         <div className="flex items-center gap-2">
                             <div>
                                 <p className="font-bold tracking-wide">Recruiter Assistant</p>
@@ -172,7 +172,7 @@ function Timeline(){
                             <li className="list-item">SAW method is based on the weight each criteria or subcriteria that is specified by the recruiter</li>
                             <li>AHP method is based on importance or priority of each criteria and subcriteria with other criteria or subcriteria</li>                                               
                         </ul>
-                        <div className="mt-5 mb-2 flex gap-2">
+                        <div className="mt-5 mb-2 flex gap-2 overflow-x-auto">
                             <LinkContent link="/documents/RA.pdf" name="dokumen" className="bg-blue-500"/>
                             <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-react" name="Frontend" className="bg-black"/>
                             <LinkContent link="https://github.com/feratyusa/spk-rekrutmen-flask" name="Backend" className="bg-black"/>
@@ -190,7 +190,7 @@ function Timeline(){
             </LineContent>
             <LineContent time="09/2022 - 10/2022">
                 <>
-                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
+                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2 gap-2 overflow-x-auto">
                         <div className="flex items-center gap-2">                            
                             <div>
                                 <p className="font-bold tracking-wide">3DVT</p>                                
@@ -227,7 +227,7 @@ function Timeline(){
             </LineContent>
             <LineContent time="05/2022 - 06/2022">
                 <>
-                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2">                        
+                    <div className="flex border-b-2 items-center justify-between border-white px-5 py-2 gap-2 overflow-x-auto">
                         <div className="flex items-center gap-2">                            
                             <div>
                                 <p className="font-bold tracking-wide">Paras</p>
